@@ -7,7 +7,7 @@ WHEN I view the source code
 WHEN I view the structure of the HTML elements
 √THEN I find that the elements follow a logical structure independent of styling and positioning
 WHEN I view the icon and image elements
-THEN I find accessible alt attributes
+√THEN I find accessible alt attributes
 WHEN I view the heading attributes
 THEN they fall in sequential order
 WHEN I view the title element
@@ -28,24 +28,35 @@ THEN I find a concise, descriptive title -->
         <nav>
             <ul>
                 <li>
-                    <a href="#search-engine-optimization">Search Engine Optimization</a>
+                    <!-- Added 'alt' attribute -->
+                    <a href="#search-engine-optimization"
+                        alt="A button to link to the Search Engine Optimization section.">Search Engine Optimization</a>
                 </li>
                 <li>
-                    <a href="#online-reputation-management">Online Reputation Management</a>
+                    <!-- Added 'alt' attribute -->
+                    <a href="#online-reputation-management"
+                        alt="A button to link to the Online Reputation Management section.">Online Reputation
+                        Management</a>
                 </li>
                 <li>
-                    <a href="#social-media-marketing">Social Media Marketing</a>
+                    <!-- Added 'alt' attribute -->
+                    <a href="#social-media-marketing"
+                        alt="A button to link to the Social Media Marketing section.">Social Media Marketing</a>
                 </li>
             </ul>
         </nav>
     </section>
     <!-- Changed 'div' to 'section' element and added a 'title' attribute to describe what is occuring in the background image. -->
-    <section class="hero" title="Four people meeting at a table looking over papers."></section>
+    <section class="hero" alt="Four people meeting at a table looking over papers.">
+        <span class="background-image" role="img" aria-label="alt text"></span>
+    </section>
     <!-- Changed 'div' to 'section' element -->
     <section class="content">
         <!-- Changes 'div' to 'section' element -->
         <section class="search-engine-optimization">
-            <img src="./assets/images/search-engine-optimization.jpg" class="float-left" />
+            <!-- Added an 'alt' attribute to the image displayed -->
+            <img src="./assets/images/search-engine-optimization.jpg" class="float-left"
+                alt="A desk filled with a laptop, coffee, magnifying glass, a pencil holder filled with colored pencils and markers, and a notebook with the words 'Content', 'Headings', 'Mobile Compatibility', 'Social Media', 'Link Building' and 'Backlink' surrounding the word 'SEO'." />
             <h2>Search Engine Optimization</h2>
             <p>
                 The dominance of mobile internet use means that users are searching for the right business as they
@@ -55,7 +66,9 @@ THEN I find a concise, descriptive title -->
         </section>
         <!-- Changed 'div' to 'section' element -->
         <section id="online-reputation-management" class="online-reputation-management">
-            <img src="./assets/images/online-reputation-management.jpg" class="float-right" />
+            <!-- Added an 'alt' attribute to the image -->
+            <img src="./assets/images/online-reputation-management.jpg" class="float-right"
+                alt="A person on a laptop and phone at the same time. The laptop screen says 'Reputation' with colorful graphs underneath it." />
             <h2>Online Reputation Management</h2>
             <p>
                 The web is full of opinions, and some of these can be negative. Social media allows anyone with an
@@ -65,7 +78,8 @@ THEN I find a concise, descriptive title -->
         </section>
         <!-- Changed 'div' to 'section' element -->
         <section id="social-media-marketing" class="social-media-marketing">
-            <img src="./assets/images/social-media-marketing.jpg" class="float-left" />
+            <img src="./assets/images/social-media-marketing.jpg" class="float-left"
+                alt="A table with six people around it collaborating and using words like, 'Like', 'Tweet', 'Media', and 'Share'." />
             <h2>Social Media Marketing</h2>
             <p>
                 Social media continues to have a sizable influence on buying habits. Social media marketing helps you
@@ -79,7 +93,9 @@ THEN I find a concise, descriptive title -->
         <!-- Changed 'div' to 'section' element -->
         <section class="benefit-lead">
             <h3>Lead Generation</h3>
-            <img src="./assets/images/lead-generation.png" />
+            <!-- Added 'alt' attribute -->
+            <img src="./assets/images/lead-generation.png"
+                alt="An all black icon with half of a gear attatched to a downward-facing arrow, pointing to a dollar sign." />
             <p>
                 Inbound strategies for lead generation require less work for your business, bringing customers directly
                 to your website.
@@ -88,7 +104,9 @@ THEN I find a concise, descriptive title -->
         <!-- Changed 'div' to 'section' element -->
         <section class="benefit-brand">
             <h3>Brand Awareness</h3>
-            <img src="./assets/images/brand-awareness.png" />
+            <!-- Added 'alt' attribute -->
+            <img src="./assets/images/brand-awareness.png"
+                alt="An all black figure of a person with a tie and a lightbulb head" />
             <p>
                 Users find your business through paid and organic searches, increasing the search ranking and visibility
                 for your business.
@@ -97,7 +115,8 @@ THEN I find a concise, descriptive title -->
         <!-- Changed 'div' to 'section' element -->
         <section class="benefit-cost">
             <h3>Cost Management</h3>
-            <img src="./assets/images/cost-management.png" />
+            <!-- Added an 'alt' attribute -->
+            <img src="./assets/images/cost-management.png" alt="An all black icon of gears and dollar signs." />
             <p>
                 As the search ranking for your business increases, your advertising costs decrease, and you no longer
                 need to advertise your page.
