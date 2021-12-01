@@ -7,7 +7,15 @@
 body {
     background-color: #d9dcd6;
 }
+/* Moved elemental tags */
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
 
+p {
+    font-size: 16px;
+}
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -26,6 +34,7 @@ body {
 
 /* Changed 'div' to 'nav' element to match HTML doc */
 .header nav{
+    /* added flex attributes to format navbar */
     display: flex;
     flex-direction: row;
     padding-top: 15px;
@@ -46,14 +55,7 @@ body {
     margin-left: 25px;
 }
 
-a {
-    color: #ffffff;
-    text-decoration: none;
-}
 
-p {
-    font-size: 16px;
-}
 
 .hero {
     height: 800px;
