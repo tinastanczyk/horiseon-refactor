@@ -9,9 +9,9 @@ WHEN I view the structure of the HTML elements
 WHEN I view the icon and image elements
 √THEN I find accessible alt attributes
 WHEN I view the heading attributes
-THEN they fall in sequential order
+√THEN they fall in sequential order
 WHEN I view the title element
-THEN I find a concise, descriptive title -->
+√THEN I find a concise, descriptive title -->
 
 <head>
     <meta charset="UTF-8" />
@@ -52,8 +52,8 @@ THEN I find a concise, descriptive title -->
     </section>
     <!-- Changed 'div' to 'section' element -->
     <section class="content">
-        <!-- Changes 'div' to 'section' element -->
-        <section class="search-engine-optimization">
+        <!-- Changes 'div' to 'section' element and added 'id' element to make navbar link function-->
+        <section id="search-engine-optimization" class="search-engine-optimization">
             <!-- Added an 'alt' attribute to the image displayed -->
             <img src="./assets/images/search-engine-optimization.jpg" class="float-left"
                 alt="A desk filled with a laptop, coffee, magnifying glass, a pencil holder filled with colored pencils and markers, and a notebook with the words 'Content', 'Headings', 'Mobile Compatibility', 'Social Media', 'Link Building' and 'Backlink' surrounding the word 'SEO'." />
